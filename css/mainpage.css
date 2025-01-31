@@ -1,0 +1,85 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+:root {
+    --colorFondo: #2d3250;  
+
+}
+
+body{
+    background-color: var(--colorFondo);
+    font-family: "Open Sans", serif;
+}
+
+
+
+h3,p,h4,table{
+    color: aliceblue;
+}
+
+.name,h6{
+    color: goldenrod;
+}
+
+
+.containerMountain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../assets/img/mountainImage.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 25vh;
+}
+
+.containerMountain h3{
+    font-size: 5vw;
+}
+
+.containerMountain p{
+    width: 70%;
+    text-align: justify;
+}
+
+.aboutme{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.aboutme div{
+    width: 50px;
+    
+}
+
+.aboutme >div:first-child{
+    display: none;
+}
+.aboutme >div:nth-child(2) h3,h6,p{
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+
+
+.aboutme >div:nth-child(2){
+    width: 80vw;
+    box-shadow: rgb(140, 138, 138) 3px 3px 5px;
+    border-radius: 10px;
+}
+
+.aboutme table{
+    border-spacing: 15px 10px;
+  
+}
+
+
+
+
+
+
