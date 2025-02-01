@@ -14,13 +14,20 @@ body{
     font-family: "Open Sans", serif;
 }
 
+hr{
+    margin: auto;
+    width: 50vw;
+}
+
+
+
 
 
 h3,p,h4,table{
     color: aliceblue;
 }
 
-.name,h6{
+.name,h6,h5{
     color: goldenrod;
 }
 
@@ -75,8 +82,21 @@ h3,p,h4,table{
 
 .aboutme table{
     border-spacing: 15px 10px;
-  
+    font-size: 0.9em;
 }
+
+#servicesTitle{
+    margin-top: 10px;
+    text-align: center;
+
+}
+
+.proyects{
+
+}
+
+
+
 
 
 
