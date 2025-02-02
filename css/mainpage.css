@@ -7,6 +7,7 @@
 :root {
     --colorFondo: #2d3250;  
     --colorContenedoresPoyectos:#434b76;
+    --colorFondoFooter:#fgb17a;
 }
 
 body{
@@ -114,6 +115,15 @@ h3,p,h4,table{
     margin: 20px 0px 20px 0px;
 }
 
+
+footer{
+    margin-top: 100px;
+    border-top: 2px solid aliceblue;
+    padding: 20px 10px 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(217, 134, 75);
+}
 
 
 
