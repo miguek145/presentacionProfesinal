@@ -2,17 +2,22 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+
+
 }
 
 :root {
     --colorFondo: #2d3250;  
     --colorContenedoresPoyectos:#434b76;
-    --colorFondoFooter:#fgb17a;
+    --colorFondoFooter:rgb(217, 134, 75);
+    --colorSubTitulos:goldenrod;
 }
 
 body{
+    overflow-x: hidden;
     background-color: var(--colorFondo);
     font-family: "Open Sans", serif;
+
 }
 
 hr{
@@ -20,14 +25,16 @@ hr{
     width: 50vw;
 }
 
-
+a{
+    text-decoration: none;
+}
 
 h3,p,h4,table{
     color: aliceblue;
 }
 
 .name,h6,h5{
-    color: goldenrod;
+    color:var(--colorSubTitulos);
 }
 
 
@@ -97,11 +104,11 @@ h3,p,h4,table{
     display: grid;
     grid-template-columns: 1fr;
     gap: 5px;
-    text-align: justify;
+    text-align: left;
       
 }
 
-.projects>div{
+.projects div{
     padding:5px 10px 5px 5px; 
     border: 2px solid black;
     display: flex;
@@ -111,10 +118,14 @@ h3,p,h4,table{
     background-color: var(--colorContenedoresPoyectos);
 }
 
-.projects>div i{
+.projects div i{
     margin: 20px 0px 20px 0px;
 }
 
+.projects div p{
+    padding-right: 5px;
+    text-align: justify;
+}
 
 footer{
     margin-top: 100px;
@@ -122,7 +133,7 @@ footer{
     padding: 20px 10px 20px 10px;
     display: flex;
     justify-content: space-between;
-    background-color: rgb(217, 134, 75);
+    background-color: var(--colorFondoFooter);
 }
 
 
