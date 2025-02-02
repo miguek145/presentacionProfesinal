@@ -19,6 +19,10 @@ hr{
     width: 50vw;
 }
 
+i{
+    color: aliceblue;
+}
+
 
 h3,p,h4,table{
     color: aliceblue;
@@ -90,8 +94,18 @@ h3,p,h4,table{
 }
 
 .proyects{
+    margin: 10px auto;
+    width: 40vw;
+    display: grid;
+    grid-template-columns: 1fr;
 
+    
 }
+
+.proyects>div{
+    border: 2px solid black;
+}
+
 
 
 
