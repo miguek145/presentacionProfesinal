@@ -16,6 +16,10 @@ body{
    background-color: var(--colorFondo);
 }
 
+main{
+    min-height: 80vh;
+}
+
 a{
     text-decoration: none;
 }
@@ -26,6 +30,8 @@ h1{
     text-align: center;
 
 }
+
+
 
 button{
     margin-top: 20px;
