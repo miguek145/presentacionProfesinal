@@ -1,0 +1,366 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;   
+}
+
+/*we declare the variables of the colours*/
+:root{
+    --color_texto:#5a0075;
+    --color_borde:#dd0a85;
+    --color_sombra:whitesmoke;
+    /*time animations*/
+    --tiempo_animation1:2.5s;
+    --tiempo_animation2:15s; 
+
+    /*animation colors nº1*/
+    --color_a1ºanimacion:rgb(19, 0, 32);
+    --color_a2ºanimacion:rgb(97, 8, 139);
+    --color_a3ºanimacion:rgb(240, 3, 253);
+    --color_a4ºanimacion:rgb(209, 165, 209);
+    --color_a5ºanimacion:rgb(246, 225, 85);
+    --color_a6ºanimacion:rgb(247, 247, 211);
+    --color_a7ºanimacion:rgb(181, 139, 182);
+    --color_a8ºanimacion:rgb(223, 140, 231);
+    --color_a9ºanimacion:rgb(255, 255, 255);
+    /*animation colors nº2*/
+    --color_b1ºanimacion:rgb(253, 208, 208);
+    --color_b2ºanimacion:rgb(255, 178, 178);
+    --color_b3ºanimacion:rgb(255, 142, 142);
+    --color_b4ºanimacion:rgb(255, 104, 104);
+    --color_b5ºanimacion:rgb(255, 63, 63);
+    --color_b6ºanimacion:rgb(255, 6, 6);
+    --color_b7ºanimacion:rgb(255, 38, 0);
+    --color_b8ºanimacion:rgb(255, 98, 0);
+    --color_b9ºanimacion:rgb(255, 157, 0);
+    --color_b10ºanimacion:rgb(255, 179, 0);
+    --color_b11ºanimacion:rgb(255, 200, 0);
+    --color_b12ºanimacion:rgb(225, 255, 0);
+    --color_b14ºanimacion:rgb(174, 255, 0);
+    --color_b15ºanimacion:rgb(33, 152, 41);
+    --color_b16ºanimacion:rgb(42, 113, 58);
+    --color_b17ºanimacion:rgb(42, 88, 53);
+    --color_b18ºanimacion:rgb(30, 52, 80);
+    --color_b19ºanimacion:rgb(29, 72, 141); 
+    --color_b20ºanimacion:rgb(50, 29, 141); 
+    --color_b21ºanimacion:rgb(85, 63, 180);
+    --color_b22ºanimacion:rgb(129, 63, 180);
+    --color_b23ºanimacion:rgb(143, 22, 180);
+    --color_b24ºanimacion:rgb(167, 22, 180);
+    --color_b25ºanimacion:rgb(176, 65, 186);
+    --color_b26ºanimacion:rgb(139, 81, 144);
+    --color_b27ºanimacion:rgb(218, 209, 219);
+    --color_b28ºanimacion:rgb(235, 227, 187);
+    --color-b29ºanimacion:rgb(255, 255, 255);
+}
+
+body{
+    background-color: var(--color_texto);
+    background-image: url('./back1.jpg');
+}
+
+h1{
+    padding:5px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-family: 'Urbanist', sans-serif;
+    letter-spacing: 2px;
+    font-size: 2.7em;
+    text-shadow: 1px 1px 5px var(--color_sombra), -1px -1px 5px var(--color_sombra);
+    color:var(--color_texto);
+}
+
+h3{
+    font-family: 'Urbanist', sans-serif;
+    font-size: 1.2em;
+    color:var(--color_texto);
+    padding:10px;
+}
+
+.contenedor{
+    background-color: var(--color_borde);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='0' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23cd6654'/%3E%3Cstop offset='1' stop-color='%23cd6654' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='1200' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%235f2a8b'/%3E%3Cstop offset='1' stop-color='%235f2a8b' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='600' cy='0' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23916c69'/%3E%3Cstop offset='1' stop-color='%23916c69' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='600' cy='800' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%239A2476'/%3E%3Cstop offset='1' stop-color='%239A2476' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23FFA732'/%3E%3Cstop offset='1' stop-color='%23FFA732' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='1200' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%232330A0'/%3E%3Cstop offset='1' stop-color='%232330A0' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' width='1200' height='800'/%3E%3Crect fill='url(%23c)' width='1200' height='800'/%3E%3Crect fill='url(%23d)' width='1200' height='800'/%3E%3Crect fill='url(%23e)' width='1200' height='800'/%3E%3Crect fill='url(%23f)' width='1200' height='800'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    width: 900px;
+    height:950px;
+    border: 5px solid var(--color_borde);
+    border-radius: 10px;
+    margin: 10px auto 0px;
+    padding:1vh 2vw;
+}
+
+.cuadrado{
+    display: grid;
+    grid-template-columns: repeat(8, 105px);
+    grid-template-rows: repeat(8, 105px);
+    justify-content:center;
+}
+
+.casilla{
+    border:2px solid var(--color_texto);
+    width:100px;
+    height:100px;  
+    
+}
+
+
+/*animations*/
+
+/*we  apply the animations on the casillas*/
+.casilla{
+    animation: animFilas;
+    animation-duration: var(--tiempo_animation1);
+    animation-timing-function:normal;  
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}  
+
+.fila1{
+ 
+   animation-delay: 0s;
+
+}
+
+.fila2{
+
+    animation-delay: 0.25s;
+
+ }
+
+ .fila3{
+  
+    animation-delay: 0.5s;
+
+ }
+
+ .fila4{
+  
+    animation-delay: 0.75s;
+ 
+ }
+
+ .fila5{
+  
+    animation-delay: 1s;
+
+ }
+
+ .fila6{
+ 
+    animation-delay: 1.25s;
+
+ }
+
+ .fila7{
+
+    animation-delay: 1.5s;
+
+ }
+
+ .fila8{
+   
+    animation-delay: 1.75s;
+ 
+ }
+
+
+
+
+/* 1st animation to bottom */
+@keyframes animFilas{
+    11.11%{
+    background-color: var(--color_a1ºanimacion);
+    }
+    22.22%{
+    background-color:var(--color_a2ºanimacion);
+    }
+    33.33%{
+    background-color: var(--color_a3ºanimacion);
+    }
+    44.44%{
+    background-color: var(--color_a4ºanimacion);
+    }
+    55.55%{
+    background-color: var(--color_a5ºanimacion);
+    }
+    66.66%{
+    background-color: var(--color_a6ºanimacion);
+    }
+    77.77%{
+    background-color: var(--color_a7ºanimacion);  
+    }
+    88.88%{
+    background-color: var(--color_a8ºanimacion);
+    }
+    100%{
+    background-color: var(--color_a9ºanimacion);
+    }
+    }
+
+    /* diagonal animation  */
+
+    /* I have created a second div in each section to add the second animation because if  I add 2 animations to the same element the first animation will get omitted*/
+    div div div{
+        height: 100%;
+        width: 100%;
+        animation: animFilasDiagonal;
+        animation-duration: var(--tiempo_animation2);
+        animation-direction: normal;
+        animation-duration: 15s;
+        animation-iteration-count: infinite;
+       
+    }
+    
+    .casilla8{
+ 
+        animation-delay: 4s;
+        
+    }
+    .casilla7,.casilla16{
+        animation-delay: 4.1s;
+    }
+
+    .casilla6,.casilla15,.casilla24{
+        animation-delay: 4.2s;
+    }
+
+    .casilla5,.casilla14,.casilla23,.casilla32{
+        animation-delay: 4.3s;
+    }
+
+    .casilla4,.casilla13,.casilla22,.casilla31,.casilla40{
+        animation-delay: 4.4s;
+    }
+
+    .casilla3,.casilla12,.casilla21,.casilla30,.casilla39,.casilla48{
+        animation-delay: 4.5s;
+    }
+
+    .casilla2,.casilla11,.casilla20,.casilla29,.casilla38,.casilla47,.casilla56{
+        animation-delay: 4.6s;
+    }
+
+    .casilla1,.casilla10,.casilla19,.casilla28,.casilla37,.casilla46,.casilla55,.casilla64{
+        animation-delay: 4.7s;
+    }
+
+    .casilla9,.casilla18,.casilla27,.casilla36,.casilla45,.casilla54,.casilla63{
+        animation-delay: 4.8s;
+    }
+
+    .casilla17,.casilla26,.casilla35,.casilla44,.casilla53,.casilla62{
+        animation-delay: 4.9s;
+    }
+
+    .casilla25,.casilla34,.casilla43,.casilla52,.casilla61{
+        animation-delay: 5s;
+    }
+
+    .casilla33,.casilla42,.casilla51,.casilla60{
+        animation-delay: 5.1s;
+    }
+
+    .casilla41,.casilla50,.casilla59{
+        animation-delay: 5.2s;
+    }
+
+    .casilla49,.casilla58{
+        animation-delay: 5.3s;
+    }
+
+    .casilla57{
+        animation-delay: 5.4s;
+    }
+
+    /*2nd animation diagonal*/
+    @keyframes animFilasDiagonal {
+    2%{
+        background-color:var(--color_b1ºanimacion);
+    }
+    5%{
+        background-color:var(--color_b2ºanimacion);
+    }
+    8%{
+        background-color:var(--color_b3ºanimacion);
+    }
+    11%{
+        background-color:var(--color_b4ºanimacion);
+    }    
+    14%{
+        background-color:var(--color_b5ºanimacion);
+    }
+    17%{
+        background-color:var(--color_b6ºanimacion);
+    }
+    20%{
+        background-color:var(--color_b7ºanimacion);
+    }
+    23%{
+        background-color:var(--color_b8ºanimacion);
+    }
+    26%{
+        background-color:var(--color_b9ºanimacion);
+    }
+    29%{
+        background-color:var(--color_b10ºanimacion);
+    }
+    32%{
+        background-color:var(--color_b11ºanimacion);
+    }
+    35%{
+        background-color:var(--color_b12ºanimacion);
+    }
+    38%{
+        background-color:var(--color_b14ºanimacion);
+    }
+    41%{
+        background-color:var(--color_b15ºanimacion);
+    }
+    44%{
+        background-color:var(--color_b16ºanimacion);
+    }
+    47%{
+        background-color:var(--color_b17ºanimacion);
+    }
+    50%{
+        background-color:var(--color_b18ºanimacion);
+    }
+    53%{
+        background-color:var(--color_b19ºanimacion); 
+    }
+    56%{
+        background-color:var(--color_b20ºanimacion); 
+    }
+    59%{
+        background-color:var(--color_b21ºanimacion);
+    }
+    62%{
+        background-color: var(--color_b22ºanimacion);
+    }
+    65%{
+        background-color:var(--color_b23ºanimacion);
+    }
+    68%{
+        background-color: var(--color_b24ºanimacion);
+    }
+    71%{
+        background-color:var(--color_b25ºanimacion);
+    }
+    74%{
+        background-color: var(--color_b26ºanimacion);
+    }
+    77%{
+        background-color:var(--color_b27ºanimacion);
+    }
+    80%{
+        background-color: var(--color_b28ºanimacion);
+    }
+    83%{
+        background-color: var(--color_b29ºanimacion);
+   
+    }
+} 
+
+
+
