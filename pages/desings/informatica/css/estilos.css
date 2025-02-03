@@ -1,0 +1,389 @@
+/* name=Miguel Gutiérrez Noguera */
+
+:root{
+    --colorTexto: #f5f5f5;
+    --colorFondoMenu:#5e1357;
+    --colorFondoMenuHover:#854a8d;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Electrolize', sans-serif;
+    overflow-x: hidden;
+}
+
+
+main{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header{
+   
+    display: flex;
+    color: var(--colorTexto);
+   
+}
+
+header>nav{
+    display: flex;
+    width: 100%;
+}
+
+header nav>ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    background-color: #f5f5f5;
+}
+
+header nav>ul>li{
+    display: flex;
+    align-items: center;
+}
+
+header>nav>ul>li:first-child{
+    width: 30%;
+    border-left: none;
+   
+}
+
+ul>li:nth-child(2){
+    width: 5%;
+}
+
+ul>li:nth-child(3){
+    width: 5%;
+}
+
+ul>:nth-child(4){
+    width: 15%;
+}
+
+ul>:nth-child(5){
+    width: 20%;
+}
+
+ul>li:nth-child(6){
+    width: 15%;
+}
+
+ul>li:nth-child(7){
+    width: 15%;
+}
+
+header>nav>ul>li>a{
+    text-decoration: none;
+    color: var(--colorTexto);
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+    background-color: #5e1357;
+    transition: 0.5s all;
+    border-right: 1px solid white;
+    font-size: 18pt;
+  
+}
+
+header>nav>ul>li:first-child>a{
+    text-align: left;
+    padding-left: 20px;
+}
+
+header>nav>ul>li>a:hover{
+    background-color: var(--colorFondoMenuHover);
+   
+}
+
+.primeraFoto{
+    border: none;
+}
+
+div>.contenedorFoto{
+    border: 3px solid white;
+    width: 40%;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+img{
+    display: block;
+    margin: auto;
+    width: 100%;
+    width: 100%;
+}
+
+/* menu hamburguesa */
+.menuHamburguesa{
+    position: relative;
+    height: 100px;
+    z-index: 2;
+   
+}
+
+/* estructura menu hamburguesa */
+.menu{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    z-index: -2;
+    
+}
+
+/* las lineas del menu hamburguesa */
+.menu span{
+    width: 40px;
+    height: 3px;
+    background-color: aliceblue;
+    transition: 200ms ease-in-out; 
+}
+
+
+/* transiciones para las lineas horizaontales del menú hamburguesa */
+input[type="checkbox"]:checked ~ .menu .linea3 {
+    transform: translateY(-11px) rotateZ(-45deg);
+    
+}
+
+input[type="checkbox"]:checked ~ .menu .linea2{
+    opacity: 0;
+   
+}
+
+input[type="checkbox"]:checked ~ .menu .linea1 {
+    transform: translateY(11px) rotateZ(45deg);
+   
+}
+
+input[type="checkbox"]{
+    height: 50px;
+    width: 50px;
+    top: 20%;
+    right: 5%;
+    position: absolute;
+    z-index: 7;
+   /* para que se ponga en invisible  */
+    opacity: 0;
+    cursor: pointer;
+
+}
+
+/* contenedores que contienen el contenido */
+main> .contenedorContenido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    align-self: center;
+    padding: 1%;
+    width: 60%;
+    color: aliceblue;
+    background-color:rgb(0, 0, 0,0.5);
+    border-radius: 5px;
+}
+
+main> .contenedorContenido a{
+    display: block;
+    text-decoration: none;
+    margin-top: 10px;
+    padding: 20px;
+    background-color: white;
+    border: #9c18e3 2px solid;
+    border-radius: 4px;
+}
+
+
+main>div>p{
+    font-size: 15pt;
+}
+
+footer{
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    color: var(--colorTexto);
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/* vamos asignando los imagenes de fondo a cada main */
+.primerMain{
+    background-image: url("../img/fondo1.jpg");
+}
+
+.segundoMain{
+    background-image: url("../img/fondo2.jpg");
+}
+
+.tercerMain{
+    background-image: url("../img/fondo3.jpg");
+}
+
+.cuartoMain{
+    background-image: url("../img/fondo4.jpg");
+}
+
+.quintoMain{
+    background-image: url("../img/fondo5.jpg");
+}
+
+.sextoMain{
+    background-image: url("../img/fondo6.jpg");
+}
+
+.septimoMain{
+    background-image: url("../img/fondo7.jpg");
+}
+
+header,footer{
+    background-color: var(--colorFondoMenu);
+}
+
+
+@media screen and  (max-width:1080px)  {
+    header{
+        
+        transition: all  0.5s ease-in-out;
+       
+    
+    }
+
+    .esconder{
+        transform: translateX(100%);
+    }
+    
+
+    header>nav>ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+    header>nav>ul>li:first-child{
+        width: 100vw;
+    }
+
+    div>.contenedorFoto{
+        width: 300px;
+        background-color: #5e1357;
+    }
+
+    header>nav>ul>li{
+        padding-left: 0%;
+        padding-right: 0%;
+       
+    }
+
+    header>nav>ul>li:hover{
+        background-color: rgb(72, 72, 212);
+    }
+
+    main>div>p{
+        font-size: 13pt;
+        text-align: justify;
+    }
+
+    .menu{
+        z-index: 4;
+    }
+
+    input[type="checkbox"]:checked ~ header{
+        top: 0%;
+    }
+
+    main> .contenedorContenido{
+        margin-top: 0%;
+        padding: 15px;
+        width: 80vw;
+       
+    }
+    h1{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+   
+    header>nav>ul>li>a{
+        border: none;
+    }
+
+
+    ul>li:first-child{
+        border-top: 2px solid white;
+        order: 7;
+        width: 100%;
+    }
+
+    ul>li:nth-child(2){
+        order: 1;
+        width: 100%;
+    }
+
+    ul>li:nth-child(3){
+        order: 2;
+        width: 100%;
+    }
+
+    ul>li:nth-child(4){
+        order: 3;
+        width: 100%;
+    }
+
+    ul>li:nth-child(5){
+        order: 4;
+        width: 100%;
+    }
+
+    ul>li:nth-child(6){
+        order: 5;
+        width: 100%;
+    }
+
+    ul>li:last-child{
+        order:6;
+        width: 100%;
+    }
+    
+    header>nav>ul>li:first-child>a{
+        width: 100%;
+        text-align: center;
+    }
+    .menu{
+        height: 50px;
+        width: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        position: absolute;
+        top: 10%;
+        right: 5%;
+        z-index: 5;
+       
+        
+    }
+
+
+}
+
+
