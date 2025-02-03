@@ -106,6 +106,10 @@ main>div>p{
         align-items: center;
     }
 
+    img{
+        width:45vw;
+    }
+
     .contenedorIconos{
         width: 100vw;
         color: aliceblue;
