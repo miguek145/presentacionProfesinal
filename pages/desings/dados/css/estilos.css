@@ -1,0 +1,139 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:  honeydew;
+    font-family: "PT Sans Narrow", sans-serif;
+}
+
+h1{
+    font-size: 50pt;
+    text-align: center;
+    color: aliceblue;
+}
+
+hr{
+    width: 80%;
+    height: 10px;
+    margin: auto;
+    background-color: aliceblue;
+    border: none;
+}
+
+section{
+    margin: 50px auto;
+    width: 80vw;
+    background-color: grey;
+    border: 3px;
+    border-radius: 4px;
+    padding: 5px;
+    border: 5px solid darkslategrey;
+}
+
+.contenedorDados{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 60px 20px 20px 20px;
+
+}
+
+.contenedorDados>div{
+    border: 2px solid white;
+    border-radius: 10px;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.contenedorDados>div>div{
+    height: 100%;
+    width: 15%;
+    display: flex;
+    
+    
+}
+
+.contenedorDados>div>div>div{
+    background-color: aliceblue;
+    height: 30px;
+    width: 100%;
+    border-radius: 50%;
+}
+/* dados */
+
+.dado1{
+    background-color:maroon ;
+    justify-content: center;
+    
+}
+
+.dado1>div{
+    align-items: center;
+}
+
+.dado2{
+    background-color: chocolate;
+    justify-content: space-between;
+}
+
+.dado2>div:nth-child(1){
+    align-items: end;
+}
+
+.dado3{
+    background-color: darkorange;
+    justify-content: space-between;
+}
+
+.dado3>div:nth-child(1){
+    align-items: end;
+}
+
+.dado3>div:nth-child(2){
+    align-items:center ;
+}
+
+.dado4{
+    background-color: darkgreen;
+    justify-content: space-between;
+}
+
+.dado4>div{
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.dado5{
+    background-color: navy;
+    justify-content: space-between;
+}
+
+.dado5>div{
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.dado5>div:nth-child(2){
+    justify-content: center;
+}
+
+.dado6{
+    background-color: indigo;
+    justify-content: space-between;
+}
+
+.dado6>div{
+    flex-direction: column;
+    justify-content: space-between;
+}
+

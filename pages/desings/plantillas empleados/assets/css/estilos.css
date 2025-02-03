@@ -1,0 +1,218 @@
+/* NOTA:para que el div de Jeff Bloom se ponga grande cuando achiques la pestaña usar flex-basis */
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: unset;
+}
+
+:root{
+
+    --colorContenedorPrincipal:rgba(30, 76, 88,0.7);
+    --colorTitulo:#fffffe;
+    --colorTarjetaPersonal1:rgb(72, 159, 218,0.7);
+    --colorTarjetaPersonal2:rgb(114, 87, 82,0.7);
+    --colorTarjetaPersonal3:rgb(244, 224, 77,0.7);
+    --colorTarjetaPersonal4:rgb(65, 226, 186,0.7);
+    --colorTarjetaPersonal5:rgb(232, 106, 146,0.7);
+    --colorTarjetaPersonal6:rgb(202, 125, 249,0.7);
+}
+
+body{
+    background-image: url(../img/wallpaper.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.contenedorTarjetas> h1{
+    width: 100%;
+    text-align: center;
+    color: var(--colorTitulo);
+
+}
+
+.contenedorTarjetas{
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 2%;
+    padding: 10px 10px;
+    width: 60vw;
+    flex-wrap: wrap;
+    background-color:var(--colorContenedorPrincipal);
+    display: flex;
+    border-radius: 4px;
+    justify-content: space-around;
+
+
+}
+
+.contenedorTarjetas>div{
+    position: relative;
+    text-align: center;
+    margin-top:3%;
+    padding:20px 20px 80px 20px;
+    border: 2px solid black;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 1%;
+}
+
+.contenedorTarjetas>div>div{
+    position: absolute;
+    bottom: 5%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    transition: all 0.5s;
+    transform: rotateX(90deg);
+    padding: 5px;
+}
+
+.contenedorTarjetas>div>div>i{
+    font-size: 20pt;
+    margin: 2px;
+}
+
+hr{
+    width: 0%;
+    height: 3px;
+    color: transparent;
+    transition: all 0.5s;
+}
+
+.contenedorTarjetas>div>img{
+    width: 8vw;
+    border-radius: 50%;
+    border: 3px solid white;
+
+}
+
+
+.contenedorTarjetas>div>h2,.contenedorTarjetas>div>h3{
+    padding-top: 3%;
+}
+
+/* tamaño para las plantillas */
+ .contenedorTarjetas >.caja1,.contenedorTarjetas >.caja2,.contenedorTarjetas>.caja5,.contenedorTarjetas>.caja6{
+      
+      width: 30%; 
+}
+
+.contenedorTarjetas> .caja3,.contenedorTarjetas>.caja4 {
+    width: 270px; 
+    /* flex: 1 1 auto; */
+    flex-basis: auto;
+    flex-grow: 1;
+
+
+}
+
+
+/* añadimos los colores a cada tarjeta */
+.contenedorTarjetas>.caja1{
+    background-color: var(--colorTarjetaPersonal1);
+}
+
+.contenedorTarjetas>.caja2{
+    background-color: var(--colorTarjetaPersonal2);
+}
+
+.contenedorTarjetas>.caja3{
+    background-color: var(--colorTarjetaPersonal3);
+}
+
+.contenedorTarjetas>.caja4{
+    background-color: var(--colorTarjetaPersonal4);
+}
+
+.contenedorTarjetas>.caja5{
+    background-color: var(--colorTarjetaPersonal5);
+}
+
+.contenedorTarjetas>.caja6{
+    background-color: var(--colorTarjetaPersonal6);
+}
+
+/* animaciones cuando se ponga el cursor sobre las plantillas */
+.contenedorTarjetas>div:hover{
+    background-image: url(../img/pattern_new-6_2_5_0-0_160_1__817979_8b9dc3.png);
+    border:solid 3px yellow;
+    box-shadow: 0px 0px 3px yellow;
+
+}
+
+.contenedorTarjetas>div:hover >hr{
+     width: 80%;
+    background-color: white;
+}
+
+.contenedorTarjetas>div:hover >h2{
+    color: yellow;
+}
+
+.contenedorTarjetas>div:hover >h3,.contenedorTarjetas>div:hover >p{
+    color: white;
+}
+.contenedorTarjetas>div:hover >div {
+    transform: rotateX(-25deg);
+
+}
+
+.contenedorTarjetas>div:hover >img{
+    border:3px solid yellow;
+}
+
+.contenedorTarjetas>div>div>i:hover {
+    color: #bb15dd;
+    transform: scale(1.2);
+}
+
+
+@media screen and (max-width:500px) {
+
+   .contenedorTarjetas{
+        padding-left: 30px;
+        padding-right: 30px;
+   }
+
+   .contenedorTarjetas>div>div:last-child{
+        background-color: aliceblue;
+        transform: rotateX(0deg);
+        width: 95%;
+        display: flex;
+        justify-content: space-around;
+        bottom: 1%;
+   }
+
+    .contenedorTarjetas >.caja1,.contenedorTarjetas >.caja2,.contenedorTarjetas> .caja3,.contenedorTarjetas>.caja4,.contenedorTarjetas>.caja5,.contenedorTarjetas>.caja6{
+        width: 270px;
+        cursor: auto;
+        
+    }
+
+    .contenedorTarjetas>div>img{
+       width: 50%; 
+    }
+
+    .noHover{
+        pointer-events: none;
+    }
+  
+
+    
+
+
+}
+
+
+
+
+
+
+
+
+
+
+

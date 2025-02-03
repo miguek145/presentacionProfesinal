@@ -1,0 +1,435 @@
+/* name:Miguel Gutiérrez Noguera */
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+:root{
+    --colorFondo:#99C1B9;
+    --colorTitulos:#E85F5C;
+    --colorPrimeraSectionCajaImpares:#F2D0A9;
+    --colorPrimeraSectionCajaPares:#E3B5A4;
+    --colorSegundaSectionYTercera:#F1E3D3;
+    --colorBordeDivs:#8E7DBE;
+    --colorHeader:rgb(180, 100, 217);
+    --colorTexto: aliceblue;
+}
+
+body{
+    background-image: url(../images/fondo.svg);
+    font-family: 'Rubik', sans-serif;
+    overflow-x: hidden;
+}
+
+header{
+    position: fixed;
+    z-index: 2;
+    width: 100vw;
+    color: aliceblue;
+    background-color:var(--colorBordeDivs);
+    text-align: center;
+    font-size: 15pt;
+}
+
+header>div>i{
+    transition: color 0.5s;
+    font-size: 20pt;
+}
+
+header>div>i:hover{
+    color: aqua;
+    cursor: pointer;
+}
+
+.titulo{
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+
+}
+
+.titulo>img{
+    width: 180px;
+}
+
+.titulo>h1{
+    margin-right: 30%;
+    text-align: center;
+    align-self: center;
+    font-size: 30pt;
+
+}
+
+.navegacion>nav>ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+
+}
+
+.navegacion>nav>ul>li{
+    width: 90%;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.navegacion>nav>ul>li>a{
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 20pt;
+    background-color: blue;
+    transition: all 0.5s;
+    
+}
+
+/* animación para los titulos de la lista principal */
+.navegacion>nav>ul>li>a:hover{
+    color: black;
+    background-color: aliceblue;
+
+}
+
+.contenedorTitulos{
+    padding: 5px;
+    display: flex;
+}
+
+.contenedorTitulos>h3:first-child{
+    padding-left: 2px;
+    width: 25.5%;
+}
+
+.contenedorTitulos>h3:nth-child(2){
+    width: 37.5%;
+
+}
+
+.contenedordeContenedores{
+    display: flex;
+    width: 100%;
+
+}
+
+/* para que los contenedores que sen encuentra en el contenedor principal no ocupen toda la altura  */
+.contenedordeContenedores>section{
+    align-self: flex-start;
+}
+
+.contenedordeContenedores div{
+    border: solid 2px var(--colorBordeDivs);
+    box-shadow: 1px 1px 3px black;
+
+}
+
+.contenedordeContenedores div span{
+    color: brown;
+}
+
+.contenedordeContenedores>section>div{
+    border-radius: 3px;
+}
+
+.contenedordeContenedores>section>div>p,.contenedordeContenedores>section>div>h3{
+    margin: 5px;
+}
+
+.contenedordeContenedores>section>div>p{
+    text-align: justify;
+}
+
+.contenedordeContenedores>section>div{
+    margin: 10px;
+    transition: all 0.5s;
+}
+
+/* animación para los contenedores  */
+.contenedordeContenedores>section>div:hover{
+    background-color: rgb(100, 221, 195);
+    cursor: pointer;
+    border: solid  2px transparent;
+    box-shadow: 0px 0px 10px yellow;
+}
+
+/* primerContenedor */
+.contenedordeContenedores> .primerConenedordivs{
+    display: flex;
+    flex: row;
+    flex-wrap: wrap;
+    position: relative;
+    width: 25%;
+
+}
+
+.contenedordeContenedores>.primerConenedordivs>div>h3{
+    background-color: var(--colorTitulos);
+    color: aliceblue;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+}
+
+.contenedordeContenedores>.segundoContenedordivs,.contenedordeContenedores>.tercerContenedordivs{
+    width: 37.5%;
+
+}
+
+.contenedordeContenedores>.primerConenedordivs>h3{
+    width: 100%;
+    padding-left: 10px;
+}
+
+.contenedordeContenedores>.primerConenedordivs>div{
+    width: 55%;
+
+}
+
+.contenedordeContenedores>.primerConenedordivs>div>p{
+    font-size: 14.4pt;
+}
+
+.contenedordeContenedores>.primerConenedordivs>div:nth-child(even){
+    position: relative;
+    left: 43%; 
+    background-color:var(--colorPrimeraSectionCajaImpares);
+
+}
+
+.contenedordeContenedores>.primerConenedordivs>div:nth-child(odd){
+    margin-left: 2%;
+    background-color: var(--colorPrimeraSectionCajaPares);
+
+}
+
+/* segundoContenedor */
+
+
+.contenedordeContenedores>.segundoContenedordivs>div>img{
+    float: left;
+}
+
+.contenedordeContenedores>.segundoContenedordivs>div{
+    background-color: #F1E3D3;
+}
+
+.contenedordeContenedores>.segundoContenedordivs>div>p{
+    line-height: 40px;
+    font-size: 16pt;
+}
+
+.contenedordeContenedores>.segundoContenedordivs>div>img{
+    width: 7vw;
+}
+
+.contenedordeContenedores>.segundoContenedordivs>h3{
+    width: 100%;
+    padding-left: 10px;
+}
+
+.contenedordeContenedores>.segundoContenedordivs>div span:nth-child(2){
+    color: black;
+
+}
+
+/* tercerPárrafo*/
+.contenedordeContenedores>.tercerContenedordivs{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.contenedordeContenedores>.tercerContenedordivs>h3{
+    width: 100%;
+    padding-left: 10px;
+}
+
+/* para que los contendores ocupen el mayor espacio posible cundo haya espacio libre a su derecha */
+.contenedordeContenedores>.tercerContenedordivs>div{
+    width: 300px;
+    flex-basis: auto;
+    flex-grow: 1;
+    background-color: #FF934F;
+}
+
+.contenedordeContenedores>.tercerContenedordivs>div>p{
+    font-size: 15pt;
+}
+
+.contenedordeContenedores>.tercerContenedordivs>div>h3{
+    color: aliceblue;
+    font-size: 20pt;
+    text-align: center;
+    
+}
+
+.contenedordeContenedores>.tercerContenedordivs>div>a{
+    display: block;
+    background-color: var(--colorPrimeraSectionCajaImpares);
+    color: rgb(3, 2, 2);
+    text-align: center;
+    text-decoration: none;
+    margin: 5px;
+    padding: 10px;
+    transition: all 0.5s;
+
+}
+
+/* animación para los enlaces de los contendores de la derecha del todo */
+.contenedordeContenedores>.tercerContenedordivs>div>a:hover{
+    color: aliceblue;
+    background-color: var(--colorTitulos);
+}
+
+.contenedordeContenedores>.tercerContenedordivs>div>img{
+    display: block;
+    width: 100%;
+}
+
+footer{
+    padding: 10px;
+    text-align: center;
+    color: aliceblue;
+    background-color: blue;
+}
+
+
+@media screen and (max-width:900px) {
+
+    .noHover{
+        pointer-events: none;
+    }
+
+    .conHover{
+        pointer-events: all;
+    }
+
+    .contenedordeContenedores{
+        padding-left: 10px;
+        padding-right: 20px;
+    }
+
+    .titulo{
+        padding-top: 50px;
+    }
+
+    .titulo>img{
+        width: 100px;
+    }
+
+    .titulo>h1{
+        font-size: 12pt;
+        padding-left: 80px;
+
+    }
+
+    .navegacion>nav>ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        list-style: none;
+
+
+    }
+    .navegacion>nav>ul>li{
+        width: 100%;
+        
+    }
+
+    .navegacion>nav>ul>li>a{
+        font-size: 15pt;
+    } 
+
+    .contenedordeContenedores>.primerConenedordivs>div{
+        width: 100%;
+       
+    }
+
+    .contenedordeContenedores>.primerConenedordivs>div:nth-child(even){
+        left: 0%;
+        margin-left: 0%;
+    }
+
+    .contenedordeContenedores>.primerConenedordivs>div>p{
+        font-size: 10pt;
+    }
+    .contenedordeContenedores>.segundoContenedordivs>div>p{
+        font-size: 10pt;
+        line-height: 15px;
+    }
+
+    .contenedordeContenedores>.tercerContenedordivs>div>h3{
+        font-size: 15pt;
+       
+    }
+
+    .contenedordeContenedores>.tercerContenedordivs>div>p{
+        font-size: 10pt;
+    }
+
+    /* animación para los contenedores  */
+    .contenedordeContenedores>section>div:hover{
+        background-color: #FF934F;
+        cursor: auto;
+        border: solid 2px var(--colorBordeDivs);
+        box-shadow: 1px 1px 3px black;
+    }
+
+    .navegacion>nav>ul>li>a{
+        margin-top: 5px;
+       
+    }
+}
+
+@media(max-width:600px){
+
+    .contenedordeContenedores>.segundoContenedordivs>div>img{
+        width: 100px;
+    }
+
+    .contenedordeContenedores{
+        flex-direction: column;
+        
+    }
+
+    .contenedordeContenedores>.primerConenedordivs>div:nth-child(even){
+        left: 43%;
+        
+    }
+
+    .contenedordeContenedores> .primerConenedordivs{
+        width: 100%;
+        order: 3;
+       
+    }
+
+    .contenedordeContenedores>.segundoContenedordivs{
+        order:1
+    }
+
+    .contenedordeContenedores>.tercerContenedordivs{
+        order: 2;
+    }
+
+    .contenedordeContenedores> .primerConenedordivs>div{
+        width: 90%;
+        
+    }
+
+    .contenedordeContenedores>.primerConenedordivs>div:nth-child(even){
+        left: 10%;
+        margin-left: 0%;
+    }
+
+    .contenedordeContenedores>.segundoContenedordivs,.contenedordeContenedores>.tercerContenedordivs{
+        width: 100%;
+       
+    }
+    .navegacion>nav>ul>li>a{
+        margin-top: 5px;
+       
+    }
+}

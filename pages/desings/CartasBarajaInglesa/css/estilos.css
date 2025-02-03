@@ -1,0 +1,184 @@
+/*Name:Miguel Gutiérrez Noguera*/
+
+:root{
+    --colorFondo:#778899;
+    --colorConenedorCartas:#2f4f4f;
+    --colorBordeCartasyFondoCartas:gainsboro;
+    --colorSombraCartas: #00000080;
+    --colorDiamantes:#900007;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--colorFondo);
+}
+
+section{
+    width: 55vw;
+    margin:1% auto;
+    padding: 5px;
+    border: var(--colorBordeCartasyFondoCartas) 3px solid;
+    background-color: var(--colorConenedorCartas);
+    border-radius: 4px;
+ 
+}
+
+section >h1{
+    font-size: 4vw;
+    text-align: center;
+    font-family: 'Literata', serif;
+    color: var(--colorBordeCartasyFondoCartas);
+}
+
+section> hr{
+    margin: auto;
+    width: 80%;
+    height: 5px;
+    background-color: var(--colorBordeCartasyFondoCartas);
+    
+}
+
+.contenedorCartas{
+    padding-top: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+
+}
+
+/* propiedades que le aplicamos a las cartas */
+section >.contenedorCartas > div{
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    width: 150px;
+    background-color: var(--colorBordeCartasyFondoCartas);
+    box-shadow: 5px 5px 5px var(--colorSombraCartas);
+    margin: 20px;
+    border: solid var(--colorBordeCartasyFondoCartas) 2px;
+    border-radius: 5px;
+    justify-content: space-between;
+}
+
+/* contenedores interiorres de las cartas */
+section>.contenedorCartas>div>div{
+    display: flex;
+    flex-direction: column;
+    font-size: 15pt;
+    align-items: center;
+    color: var(--colorDiamantes);
+    
+}
+
+/* centramos los divs internos de las cartas que solo tengan un diamante */
+section>.contenedorCartas>.carta1>:nth-child(2),section>.contenedorCartas>.carta5>:nth-child(3),.contenedorCartas>.carta9>:nth-child(3){
+    align-items: center;
+    justify-content: center;
+}
+
+
+section>.contenedorCartas>div>:nth-child(2){
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: space-between;
+
+}
+
+section>.contenedorCartas>div>:nth-child(3){
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: space-between;
+}
+
+
+section>.contenedorCartas>div>:nth-child(4){
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: space-between;
+    
+}
+
+/* bajamos el diamante del tercer div interno de la carta  */
+section>.contenedorCartas>.carta7>:nth-child(3){
+    padding-top: 50px;
+}
+
+/* dejamos los espacios optimos  para los dos diamantes para el tercer div de las cartas 8 y 10  */
+section>.contenedorCartas>.carta8>:nth-child(3),section>.contenedorCartas>.carta10>:nth-child(3){
+    justify-content: space-around;
+}
+
+/* aplicamos estilos al primer div interno de las cartas para que se alineen bien los elementos */
+section >.contenedorCartas>div>:first-child{
+    flex-direction: column;
+    align-items: center;
+    font-size: 10pt;
+
+}
+
+/* aplicamos estilos al último div interno de las cartas para que se alineen bien los elementos */
+section>.contenedorCartas>div>:last-child{
+    flex-direction: column-reverse;
+    justify-content: end;
+    align-items: center;
+    font-size: 10pt;
+    padding-bottom: 0%;
+}
+
+/* aplicamos propiedades a los divs que contendrán de fondo las imagenes de las cartas */
+section>.contenedorCartas>.carta11>:nth-child(2),section>.contenedorCartas>.carta12>:nth-child(2),section>.contenedorCartas>.carta13>:nth-child(2){
+    width: 100%;
+    height: 85%;
+    margin-top: 15px;
+   
+}
+
+/* aplicamos propiedades para las imagenes de fondo de las 3 últimas cartas */
+section>.contenedorCartas>.carta11>:nth-child(2),section>.contenedorCartas>.carta12>:nth-child(2),section>.contenedorCartas>.carta13>:nth-child(2){
+    background-size: contain;
+    background-repeat:  no-repeat;
+    margin-left: 5px;
+}
+
+section>.contenedorCartas>.carta11>:nth-child(2){
+    background-image: url(../assets/img/JD.png);
+}
+
+section>.contenedorCartas>.carta12>:nth-child(2){
+    background-image: url(../assets/img/QD.png);
+}
+
+section>.contenedorCartas>.carta13>:nth-child(2){
+    background-image: url(../assets/img/KD.png);
+}
+
+/* les vamos aplicando las posiciones de los diamantes de cada que están encima de las imágenes */
+section>.contenedorCartas>.carta11>:nth-child(2)>i:nth-child(1),section>.contenedorCartas>.carta12>:nth-child(2)>i:nth-child(1){
+    position: relative;
+    top: -10px;
+    right:-30px;
+    
+}
+
+section>.contenedorCartas>.carta11>:nth-child(2)>i:nth-child(2),section>.contenedorCartas>.carta12>:nth-child(2)>i:nth-child(2){
+    position: relative;
+    top: 10px;
+    right:45px;
+}
+
+section>.contenedorCartas>.carta13>:nth-child(2)>i:nth-child(1){
+    position: relative;
+    top: -10px;
+    right:40px;
+}
+
+section>.contenedorCartas>.carta13>:nth-child(2)>i:nth-child(2){
+    position: relative;
+    top: 10px;
+    right:-30px;
+}

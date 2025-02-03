@@ -1,0 +1,215 @@
+/* nombre:Miguel Gutiérrez Noguera */
+*{
+    box-sizing: border-box;
+    margin:0%;
+    padding:0%;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --herocolor:#cb1da0;
+    --fondolanding: #120f0fa3;
+    --textcolor: #d1d1d1;
+    --fondopoema: #1c262b;
+    --fondocruz: #f0f0f055;
+
+}
+
+/*contenedor de las barras del menú hamburguesa*/
+.burger{
+    position: relative;
+    height: 100px;
+     z-index: 5;
+     display:block;
+       
+}
+
+/* estructura menu hamburguesa */
+.contenedor_icono_burger{
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    padding-top: 14px;
+    padding-left: 9px;
+    border-radius: 50%;
+    top: 30px;
+    right: 3%;
+    z-index: 6;
+    cursor:pointer;
+    transition: 0.5s all;
+    border: transparent 2px solid ;
+    background-color: transparent;
+}
+
+/* animación fondo menú hamburguesa */
+.icono_barras{
+    background-color: var(--fondocruz);
+    border: solid 2px var(--textcolor);
+    
+}
+
+body{
+    overflow-x: hidden;
+    overflow-y: hidden; 
+
+}
+
+main{
+   height: 100vh;
+   background-image:url('../assets/img/road.jpg'); 
+   background-size: 100% 100%;
+   background-repeat: no-repeat;
+
+}
+
+/*barras menú hamburguesa*/
+span{ 
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 5px;
+    margin-bottom: 8px;
+    background: var(--herocolor);
+    border-radius: 3px; 
+    transition: 0.5s all; 
+    
+}
+
+/* animaciones de las lineas del menu hamburguesa */
+.icono_barras > span{
+    background-color: var(--textcolor);
+}
+
+.icono_barras > span:first-child{
+    transform:translateX(9px) rotateZ(-140deg)translateY(-16px) scale(0.8);
+}
+
+ .icono_barras > span:nth-child(2){
+    transform: translateX(-40px);
+    background-color: transparent; 
+} 
+
+.icono_barras > span:nth-child(3){
+    transform: translateX(9px)rotateZ(140deg)translateY(18px)scale(0.8) ;
+}
+
+/*panel central landing page*/
+.herotext{
+    margin: auto;
+    width: 80vw;
+    padding: 2% 5% 7% 5%;   
+    background-color: var(--fondolanding);
+    border: 5px solid var(--herocolor);
+    border-radius: 15px;
+}
+
+/*título de la landing page*/
+.herotext>h1{
+    font-family: 'Lexend Mega', sans-serif;
+    font-weight: normal;
+    font-size: 4.5vw;
+    text-align: center;
+    padding-bottom:10px;
+    border-bottom: 5px solid var(--herocolor);
+    color:var(--herocolor);   
+}
+
+
+/*texto del párrafo de la landing page*/
+.herotext>p{
+    padding-top: 60px;
+    margin: auto;
+    width: 90%;
+    padding-bottom: 60px;
+    text-align: center;
+    font-family: 'Habibi', serif;
+    font-size:2vw;
+    color: var(--herocolor);   
+}
+
+
+/*panel izquierdo*/
+.izquierda{
+    position:absolute;
+    padding-top: 30px;
+    top: 0%;
+    left: -40%;
+    height: 100%;
+    width: 40%;
+    background-color:var(--fondopoema);
+    background-size: 150% 150%;
+    transition: 0.5s all;
+
+}
+
+.izquierda_on{  
+    left: 0%;
+   
+}
+
+/*texto del lateral izquierdo*/
+.izquierda>p{
+    font-family: 'Habibi', serif;
+    font-weight: normal;
+    text-align: center;
+    color:var(--textcolor);
+}
+
+/*panel derecho*/
+.derecha{
+    position:absolute;
+    top: 0%;
+    right: -60%;
+    padding-top: 50px;
+    width:60%;
+    height:100%;
+    background-image: url('../assets/img/background.jpg');
+    transition: 0.5s transform;  
+      
+}
+
+.derecha_on{  
+    transform: translateX(-100%);
+   
+}
+
+/*formato texto  panel derecho*/
+.derecha >div,ul{
+    text-decoration: none;
+    font-family: 'Lexend Mega', sans-serif;
+    font-size: 3vw;
+    font-weight: 200;
+    text-align: center;
+    list-style: none;
+    line-height: 5rem;
+    color: var(--textcolor);
+    padding-top: 50px;
+    
+}
+
+.derecha>ul>li>a{
+    text-decoration: none;
+    color: var(--textcolor);
+  
+    
+}
+
+.derecha>ul>li>a:hover{
+    transition: 0.5s background-color;
+    background-color:var(--fondopoema);
+    border: var(--textcolor) solid 5px;
+    border-radius: 5px;
+}
+
+
+
+h2,h3{
+    font-weight: 700;
+}
+h2{
+    font-size: 4vw;
+} 
+h3{
+     font-size: 3vw; 
+   
+}

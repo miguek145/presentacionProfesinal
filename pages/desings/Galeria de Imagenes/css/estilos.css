@@ -1,0 +1,199 @@
+/* NAME:Miguel Gutiérrez Noguera */
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('../images/images/wallpaper.png');
+    font-family: "Sora", sans-serif;
+
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+}
+
+h1,p,footer{
+    color: goldenrod;;
+}
+
+h1{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 35pt;
+    padding-bottom: 2%;
+    
+}
+
+p{
+    line-height: 3 rem;
+    font-size: 18pt;
+    text-align: justify;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+section{
+    margin:auto;
+    width: 90vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    background-color: rgb(80, 80, 80);
+    grid-gap: 10px; 
+    padding: 1%; 
+}
+
+section>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 5px;
+    height: 300px;
+    background-size: 100% 100%;
+    transition: all 0.5s ;
+}
+
+section>div>h3{
+    
+    width: 100%;
+    background-color: rgba(240, 135, 15, 0.5);
+    transition: all 0.5s;
+}
+
+/* animaciones */
+
+section>div:hover{
+    transform: scale(1.02);
+}
+
+section>div:hover >h3{
+    opacity: 0;
+
+}
+
+section>div>h3:first-child{
+  
+    padding-left: 2%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+
+}
+
+section>div>h3:last-child{
+   
+    padding-right: 2%;
+    text-align: right;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+footer{
+    font-size: 20pt;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* asignamos las fotos a los divs internos del section */
+
+.f1{
+
+    background-image: url('../images/images/f1.jpg');
+}
+
+.f2{
+
+    background-image: url('../images/images/f2.jpg');
+}
+
+.f3{
+
+    background-image: url('../images/images/f3.jpg');
+}
+
+.f4{
+
+    background-image: url('../images/images/f4.jpg');
+}
+
+.f5{
+
+    background-image: url('../images/images/f5.jpg');
+}
+
+.f6{
+
+    background-image: url('../images/images/f6.jpg');
+}
+
+.f7{
+
+    background-image: url('../images/images/f7.jpg');
+}
+
+.f8{
+
+    background-image: url('../images/images/f8.jpg');
+}
+
+.f9{
+
+    background-image: url('../images/images/f9.jpg');
+}
+
+.f10{
+
+    background-image: url('../images/images/f10.jpg');
+}
+
+.f11{
+
+    background-image: url('../images/images/f11.jpg');
+}
+
+.f12{
+
+    background-image: url('../images/images/f12.jpg');
+}
+
+.f13{
+
+    background-image: url('../images/images/f13.jpg');
+}
+
+.f14{
+
+    background-image: url('../images/images/f14.jpg');
+}
+
+.f15{
+
+    background-image: url('../images/images/f15.jpg');
+}
+
+.f16{
+
+    background-image: url('../images/images/f16.jpg');
+}
+
+.f17{
+
+    background-image: url('../images/images/f17.jpg');
+}
+
+.f18{
+
+    background-image: url('../images/images/f18.jpg');
+}
+
+.f19{
+
+    background-image: url('../images/images/f19.jpg');
+}
+
+.f20{
+
+    background-image: url('../images/images/f20.jpg');
+}
+
