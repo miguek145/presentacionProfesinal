@@ -29,6 +29,10 @@ a{
     text-decoration: none;
 }
 
+a:hover >div{
+    background-color: chocolate;
+}
+
 h3,p,h4,table{
     color: aliceblue;
 }
