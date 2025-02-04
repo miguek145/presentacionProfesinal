@@ -124,6 +124,7 @@ h3,p,h4,table{
     align-items: center;
     border-radius: 5px;
     background-color: var(--colorContenedoresPoyectos);
+    height: 190px;
 }
 
 .projects div i{
@@ -156,6 +157,10 @@ footer{
     .projects{
         grid-template-columns:repeat(2,1fr) ;
         grid-template-rows:repeat(2,1fr) ;
+    }
+
+    .projects div{
+        height: 150px;
     }
 
 }
