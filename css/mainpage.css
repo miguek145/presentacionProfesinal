@@ -30,7 +30,7 @@ a{
 }
 
 a:hover >div{
-    background-color: chocolate;
+    background-color: var(--colorFondoFooter);
 }
 
 h3,p,h4,table{
