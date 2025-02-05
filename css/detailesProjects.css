@@ -69,13 +69,10 @@ section>div>img{
     width: 100%;
 }
 
-
-
-
-hr{
+.imgResponsive{
     margin: 0% auto;
-    width: 80%;
-    color: aliceblue;
+    width: 250px;
+    height: 400px;
 }
 
 footer{
@@ -101,6 +98,12 @@ footer{
 
     div:nth-child(even){
         flex-direction: row-reverse;
+    }
+
+    .imgResponsive{
+        margin: 0% auto;
+        width: 400px;
+        height: 600px;
     }
 
     section>div>img{
