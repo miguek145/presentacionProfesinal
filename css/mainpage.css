@@ -33,6 +33,7 @@ a:hover >div{
     background-color: var(--colorFondoFooter);
 }
 
+
 h3,p,h4,table{
     color: aliceblue;
 }
@@ -104,6 +105,14 @@ h3,p,h4,table{
     text-align: center;
 }
 
+.row{
+    color: goldenrod;
+    position: absolute;
+    bottom: 0%;
+    right: 10%;
+}
+
+
 .projects{
     margin: 10px auto;
     width: 40vw;
@@ -115,6 +124,7 @@ h3,p,h4,table{
 }
 
 .projects div{
+    position: relative;
     padding:5px 10px 5px 5px; 
     border: 2px solid black;
     display: flex;
