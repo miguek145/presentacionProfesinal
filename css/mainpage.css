@@ -162,6 +162,12 @@ footer{
         padding-bottom: 20px;
     }
 
+
+    .containerMountain p{
+        width: 100%;
+        text-align: center;
+    }
+
     .projects{
         grid-template-columns:repeat(2,1fr) ;
         grid-template-rows:repeat(2,1fr) ;
