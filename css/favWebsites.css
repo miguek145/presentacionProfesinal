@@ -17,7 +17,7 @@ body{
 }
 
 main{
-    min-height: 60vh;
+    min-height: 80vh;
 }
 
 a{
@@ -30,6 +30,10 @@ h1{
     color: var(--colorSubTitulos);
     text-align: center;
 
+}
+
+footer h3,footer p{
+    color: aliceblue;
 }
 
 

@@ -45,7 +45,9 @@ section{
     width: 90vw;
 }
 
-
+main{
+    min-height: 80vh;
+}
 
 
 section>div{
@@ -84,6 +86,11 @@ footer{
     background-color: var(--colorFondoFooter);
     color: aliceblue;
 }
+
+footer h3,footer p{
+    color: aliceblue;
+}
+
 
 
 @media (min-width:1100px){
